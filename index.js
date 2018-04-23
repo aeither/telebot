@@ -1,4 +1,4 @@
-const TeleBot = require('telebot');
+const TeleBot = require('telebot/lib/TeleBot');
 const bot = new TeleBot('523041716:AAGBiNq28ygGpkMdQsdv3ziPMtiVxSCtEeE');
 
 bot.on(['/start', '/hello'], (msg) => msg.reply.text('Welcome to Save Act, Lets get started: Type you ragione sociale!'));
