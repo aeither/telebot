@@ -1,0 +1,11 @@
+module.exports = function echoBot (hook) {
+  var linke = 'https://api.telegram.org/bot' + hook.env.ms_key + '/sendMessage';
+
+  var request = require('request');
+  request.post( linke , {
+      "chat_id": hook.params.message,
+      "text": hook.params.message
+    }, function(err,httpResponse,body){ 
+      hook.res.end(linke);
+    });
+};
