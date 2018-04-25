@@ -15,10 +15,11 @@
     "express": "^4.16.3",
     "micro-bot": "^2.2.3",
     "node-telegram-bot-api": "^0.30.0",
-    "request": "^2.85.0",
-    "telebot": "^1.2.6"
+    "request": "^2.85.0"
   },
   "devDependencies": {
+    "telebot": "file:telebot",
+    "webpack": "^4.6.0",
     "webpack-cli": "^2.0.15"
   }
 }
